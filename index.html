@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
 <body>
 	<nav class="main-navigation">
@@ -21,7 +24,7 @@
 		<p><b>Седона-небольшой городок в Аризоне заслуживающий большего!</b></p>
 		<section class="features">
   		<h2 class="visually-hidden">Преимущества</h2>
-    	<p>Рассмотрим 5 причин по которым, Седона круче, чем Гранд Каньон</p>
+    	<p class="subtitle_features">Рассмотрим 5 причин по которым, Седона круче, чем Гранд Каньон</p>
     	<section class="features-1">
       	<h3>Настоящий городок</h3>
       	<span>№1</span>
@@ -60,7 +63,7 @@
         		<h3>Небольшая площадь</h3>
         		<p>Все достопримечательности находятся очень близко</p>
         	</li>
-        	<li class="feature2-three">
+        	<li class="feature-three">
         		<span class="features-number">№4</span>
         		<h3>Красивая дорога</h3>
         		<p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
@@ -73,13 +76,14 @@
     		</ul>
       </section>
 		</section>
-		<section class="search">
+		<section class="search_hotels">
     	<h4>Заинтересовались?</h4>
-    	<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+    	<p class="subtitle">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
     	<img src="img/map_sedona.jpg" width="1200" height="593" alt="Карта Седоны"  usemap="#map"/>
     	<map name="map"></map>
-    	<h3>Поиск гостиниц в Седоне</h3>
+    	<h3 class="visually-hidden">Поиск гостиниц в Седоне</h3>
     	<form class="form_booking" action="https://sedona.ru" method="post">
+    	<button class="button_title">Поиск гостиниц в Седоне</button>
   			<p>
    				<label for="date-arrival">Дата заезда</label>
    				<input id="date-arrival"  type="text" name="date" value="" placeholder="24 апреля 2017">
@@ -106,7 +110,7 @@
 	</main>
 	
 	<footer class="main-footer">
-  	<span>#visitSEDONA</span>
+  	<span claass="hashtag">#visitSEDONA</span>
     <ul class="social_icon-list">
     	<li class="social-button"><a href="https://www.vkontakte.com/sedona" aria-label="Sedona В контакте">Вконтакте</a></li>
     	<li class="social-button"><a href="https://www.facebook.com/sedona" aria-label="Sedona на Фейсбуке">Фейсбук</a></li>
