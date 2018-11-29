@@ -237,5 +237,9 @@ h4 {
 }
 
 
+input, button, textarea, select{
+	font-family: "PT-Sans", Arial, sans-serif;
+} 
+
 
 
