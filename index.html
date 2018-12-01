@@ -8,6 +8,7 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
 <body>
+  <div class="wrapper">
 	<nav class="main-navigation">
 		<ul class="site-navigation">
     	<li><a href="info.html">Информация</a></li>
@@ -19,16 +20,20 @@
 	</nav>
    
   <main class="container">
+    <div class="wrapper_welcome">
 		<section class="welcome">
 		</section>
 		<p><b>Седона-небольшой городок в Аризоне заслуживающий большего!</b></p>
+		</div>
 		<section class="features">
   		<h2 class="visually-hidden">Преимущества</h2>
     	<p class="subtitle_features">Рассмотрим 5 причин по которым, Седона круче, чем Гранд Каньон</p>
     	<section class="features-1">
+     	  <div class="text_1">
       	<h3>Настоящий городок</h3>
       	<span>№1</span>
-      	<p>Седона — не аттракцион для туристов,там течет своя жизнь</p>
+      	<p>Седона — не аттракцион для туристов, там течет своя жизнь</p>
+      	</div>
       	<img src="img/img_citysedona.jpg" width="800" height="256" alt="Изображение городка Седона»">
       </section>
       <section class="features1-inner">
@@ -51,10 +56,12 @@
 				</ul>
 			</section>
 			<section class="features-2">
+   			<div class="text_1">
     		<h3>Там есть мост дьявола</h3>
     		<span>№2</span>
-      	<p>Да по нему можно пройти!Если конечно вы осмелитесь</p>
-      	<img src="img/img_canyonsedona.jpg" width="800" height="256" alt="Изображение моста дьявола в Седоне»">
+      	<p>Да по нему можно пройти! Если конечно вы осмелитесь</p>
+      	</div>
+      	<img class="order" src="img/img_canyonsedona.jpg" width="800" height="256" alt="Изображение моста дьявола в Седоне»">
     	</section>
     	<section class="features-3">
       	<ul class="feature-list">
@@ -77,28 +84,30 @@
       </section>
 		</section>
 		<section class="search_hotels">
+   	  <div class="wrapper_map">
     	<h4>Заинтересовались?</h4>
-    	<p class="subtitle">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+    	<p class="subtitle">Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
     	<img src="img/map_sedona.jpg" width="1200" height="593" alt="Карта Седоны"  usemap="#map"/>
     	<map name="map"></map>
+    	</div>
     	<h3 class="visually-hidden">Поиск гостиниц в Седоне</h3>
     	<form class="form_booking" action="https://sedona.ru" method="post">
     	<button class="button_title">Поиск гостиниц в Седоне</button>
-  			<p>
+  			<p class="fields">
    				<label for="date-arrival">Дата заезда</label>
    				<input id="date-arrival"  type="text" name="date" value="" placeholder="24 апреля 2017">
    			</p>
-   			<p>
+   			<p class="fields">
    				<label for="date-departure">Дата выезда</label>
    				<input id="date-departure" type="text" name="date" value="" placeholder="4 июля 2017">
    			</p>
-   			<p>
+   			<p class="fields_2">
    				<label for="number-of-adults">Взрослые</label>
    				<button class="button-minus" type="button">-</button>
    				<input class="number-of-adults" id="number-of-adults" type="text" name="number-of-adults" value="2" placeholder="2">
    				<button class="button-plus" type="button">+</button>
    			</p>
-   			<p>
+   			<p class="fields_2" class="fields_child">
    				<label for="number-of-children">Дети</label>
    				<button class="button-minus" type="button" >-</button>
    				<input  class="number-of-children" id="number-of-children" type="text" name="number-of-children" value="0" placeholder="0">
@@ -110,16 +119,19 @@
 	</main>
 	
 	<footer class="main-footer">
+ 	  <div class="wrapper_footer">
   	<span claass="hashtag">#visitSEDONA</span>
     <ul class="social_icon-list">
     	<li class="social-button"><a href="https://www.vkontakte.com/sedona" aria-label="Sedona В контакте">Вконтакте</a></li>
     	<li class="social-button"><a href="https://www.facebook.com/sedona" aria-label="Sedona на Фейсбуке">Фейсбук</a></li>
     	<li class="social-button"><a href="https://www.yotube.com/sedona" aria-label="Sedona на Ютуб">Ютуб</a></li>
     </ul>
-    <p>
+    <p class="logo_footer">
       <span>Website by</span>
       <a href="https://htmlacademy.ru/intensive/htmlcss" class="logo-footer"><img src="img/logo_htmlacademy.svg" width="115" height="40" alt="Логитип разработчиков сайта «HTML Академия»"></a>
 	  </p>
+	  </div>
 	</footer>
+	</div>
 </body>
 </html>

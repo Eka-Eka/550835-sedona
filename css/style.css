@@ -1,4 +1,5 @@
 body {
+	width:100%;
   margin: 0;
   padding: 0;
   
@@ -9,21 +10,46 @@ body {
   color: #000000;
   
   text-transform: uppercase;
-  background-color: #ffffff;
+  background-color: #f2f2f2;
   background-position: top center;
   background-repeat: no-repeat;
+	
+}
+
+.wrapper {
+  width:1200px;
+	text-align: center;
+	background-color: #ffffff;
 }
 
 
 .main-navigation {
+	width:1200px;
+	margin:0px, auto;
+	
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
+	
+	background-color: #ffffff;
+	outline: 1px solid yellow;
+	
+}
+
+.site-navigation {
+	margin: 0;
+  padding: 0;
 }
 
 ul {
+	margin: 0px;
+	padding: 0px;
   list-style-type: none;
 }
 
@@ -32,17 +58,34 @@ a {
 }
 
 .site-navigation a {
-	
   color:#000000;
+}
+
+.wrapper_welcome {
+  width:100%;
+  display: flex;
+	flex-direction: column;
+	align-items: center;
+	outline: 1px solid red;
 }
 
 .welcome {
   width:1200px;
 	
-  background: url('../img/background_photo.jpg');
+  background: url('../img/background_photo.jpg') 100% no-repeat;
   background-color: #81b3d2;
   background-position: center;
 	
+	
+}
+
+.visually-hidden{
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  …
 }
 
 b {
@@ -50,11 +93,93 @@ b {
   text-align: center;
 }
 
+.features {
+	width: 100%;
+	background-color: #ffffff;
+	
+}
+
+.features-1 {
+	width: 1200px;
+	margin-bottom: 60px;
+	
+	display: flex;
+	outline: 1px solid green;
+	justify-content:center;
+	
+}
+
+
+.features1-inner {
+  width: 1200px;
+	margin-bottom: 50px; 
+	
+}
+
+.feature-list {
+	display: flex;
+	align-content: center;
+	margin: 0px;
+	padding: 0px;
+	
+ 
+}
+
+.feature-inner {
+	width: 400px;
+	text-align: center;
+	outline: 1px solid red;
+}
+
+.features-2 {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	
+	width: 100%;
+	
+	outline: 1px solid green;
+	
+}
+
+.order {
+	order: -4;
+}
+
+.text_1 {
+	width: 400px;
+	
+	padding-top: 50px;
+	padding-left: 50px;
+	padding-right: 50px;
+	
+	
+	text-align: center;
+	
+}
+
+.features-3 {
+  width: 1200px;
+	
+	margin-bottom: 60px;
+	padding-bottom: 65px;
+	
+}
+
+.feature-three {
+	width: 400px;
+	
+	text-align: center;
+	outline: 1px solid red;
+}
+
 .subtitle_features {
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
   color: #333333;
+	
+	text-align: center;
 }
 
 .features-1,
@@ -100,17 +225,29 @@ b {
 }
 
 .features-3 {
-   background-color:#eeeeee;
+  background-color:#eeeeee;
+	
+}
+
+.feature-list{
+	margin: 0px;
+	padding: 0px;
+	
 }
 
 h4 {
+	margin: 0px;
+	padding-bottom: 35px;
+	
   font-size: 30px;
   line-height: 36px;
-	
   text-align: center;
 }
 
 .subtitle {
+	 margin: 0px;
+	 padding-bottom: 55px;
+	
    line-height: 24px;
    font-weight: 400;
    color:#333333;
@@ -118,11 +255,28 @@ h4 {
    text-align: center;
 }
 
+.wrapper_map {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	
+	width: 1200px;
+}
+
+
+.search_hotels {
+	margin: 0 auto;
+}
+
 
 .form_booking{
+	display: flex;
+	flex-direction: column;
+	
+	width: 570px;
   font-weight: 700;
   
-   background-color: #ffffff;
+  background-color: #ffffff;
 }
 
 .button_title {
@@ -165,7 +319,7 @@ h4 {
   line-height: 26px;
   font-weight: 700;  
   color:#a9a9a9;
-      
+    
   background-color:transparent;;  
   border: none;  
 }
@@ -192,6 +346,29 @@ h4 {
   background-color: #5496bd; 
 }
 
+
+.container-hotels {
+	width: 1200px;
+}
+
+.list_card {
+	width: 100%;
+}
+
+card_hotel {
+	display: flex;
+	flex-direction: row;
+}
+
+.card_flex{
+	margin: 0px;
+	width: 423px;
+}
+
+.rating {
+	margin: 0px;
+	width: 111px;
+}
 
 .card_hotel p.price {
   font-weight: 400;
@@ -225,12 +402,47 @@ h4 {
   border:none;
 }
 
+.fields {
+	width: 460px;
+	display: flex;
+	flex-direction: row;
+	outline: 1px solid red;
+}
+
+
+
+.main-footer {
+	width: 1200px;
+	padding: 36px 0;
+	background-color:rgba(255,255,255,0.3);
+}
+
+
+.wrapper_footer {
+	display: flex;
+	justify-content: space-around;
+	align-items: baseline;
+}
+
 
 
 .hashtag {
-  font-size: 21px;  
+	width: 136px;
+	margin: 0px;
+  font-size: 21px;
 }
 
+
+.social_icon-list {
+	margin: 0px;
+	width: 152px;
+	text-align: center;
+}
+
+.logo_footer{
+	width: 198px;
+	margin: 0px;
+}
 
 .social-button a {
   color: #000000;  
@@ -240,6 +452,8 @@ h4 {
 input, button, textarea, select{
 	font-family: "PT-Sans", Arial, sans-serif;
 } 
+
+
 
 
 
