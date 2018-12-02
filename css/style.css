@@ -79,7 +79,7 @@ a {
 	
 }
 
-.visually-hidden{
+.visually_hidden{
   position: absolute;
   clip: rect(0 0 0 0);
   width: 1px;
@@ -349,26 +349,71 @@ h4 {
 
 .container-hotels {
 	width: 1200px;
-}
-
-.list_card {
-	width: 100%;
-}
-
-card_hotel {
-	display: flex;
-	flex-direction: row;
-}
-
-.card_flex{
 	margin: 0px;
-	width: 423px;
+}
+
+.card_hotel {
+	display: flex;
+	align-items: center;
+	padding-bottom:60px;
+	
+}
+
+.img_card {
+  margin: 0px;
+	padding-right: 30px;
+	
+	align-items: flex-end;
+	align-self: flex-end;
+}
+
+.list-card {
+	padding: 80px 73px;
+}
+.text_cardhotel {
+	width:260px;
+	
+	align-items: baseline;
+	align-self: flex-end;
+	
+	margin: 0px;
+}
+
+.flex_rating {
+	display: flex;
+	justify-content: flex-end;
+	
+	 align-items:flex-end;
 }
 
 .rating {
-	margin: 0px;
-	width: 111px;
+	 width:111px;
+	 align-self: flex-end;
+	
+	 background-color: #f2f2f2;
+	
 }
+
+
+
+.flex_container{
+	display: flex;
+}
+
+.name-hotel, .price {
+	margin: 0px;
+}
+
+.name-hotel {
+	margin: 0px;
+	
+	font-size: 21px;
+	line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+}
+
 
 .card_hotel p.price {
   font-weight: 400;
@@ -381,6 +426,11 @@ card_hotel {
 }
 
 .card-link {
+	margin: 0px;
+	margin-right: 5px;
+	padding: 8px 17px;
+	
+	
   font-size: 14px;
   line-height: 21px;
   font-weight: 700;
@@ -388,10 +438,14 @@ card_hotel {
   color: #ffffff;
   
   background-color: #81b3d2;
+	border:none;
 }
 
 
 .button-reservation {
+	margin: 0px;
+	padding: 8px 17px;
+	
   font-size: 14px;
   line-height: 21px;
   font-weight: 700;
