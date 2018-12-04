@@ -8,40 +8,43 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
 <body>
-	<nav class="main-navigation">
-      <ul class="site-navigation">
-      <li><a href="info.html">Информация</a></li>
-      <li><a href="gallery.html">Фото и видео</a></li>
-      <li><a href="#" class="logo"><img src="img/logo_sedona.svg" width="140" height="70" alt="Логитип сервиса, предоставляющего бронирование гостиниц «Седона»"></a></li> 
-      <li><a href="map.html">Карта штата</a></li>
-      <li><a href="inner.html">Гостиницы</a></li>
+  <div class="wrapper">
+	<nav class="main_navigation">
+		<a href="#" class="logo"><img src="img/logo_sedona.svg" width="140" height="70" alt="Логитип сервиса, предоставляющего бронирование гостиниц «Седона»"></a>
+		<ul class="site_navigation">
+    	<li class="navigation"><a href="info.html">Информация</a></li>
+      <li class="navigation"><a href="gallery.html">Фото и видео</a></li>
+      <li class="navigation"><a href="map.html">Карта штата</a></li>
+      <li class="navigation"><a href="inner.html">Гостиницы</a></li>
 		</ul>
 	</nav>
-  <main class="container-hotels">
-  	<section class="list-card">
+	<section class="filter">
+	
+		
+	</section>
+  <main class="container_hotels">
+  	<section class="list_card">
   	  <h1 class="visually_hidden">Бронирование гостиниц</h1>
       <div class="card_hotel">
         <img class="img_card" src="img/card-hotels1.jpg" width="135" height="90" alt="Изображение гостиницы Amara Resort & Spa»" >
         <div class="text_cardhotel">
-      	  <h2 class="name-hotel">Amara Resort Spa</h2>
+      	  <h2 class="name_hotel">Amara Resort Spa</h2>
       	  <p class="price">Гостиница От 4000 Р.</p>
       	  <div class="flex_container">
-      	    <a href="#" class="card-link" >Подробнее</a>
-      	    <button class="button-reservation">Забронировать</button>
+      	    <a href="#" class="card_link" >Подробнее</a>
+      	    <button class="button_reservation">Забронировать</button>
       	  </div>
       	</div>
-      	<div class="flex_rating" >
 		    <span class="rating">Рейтинг: 8,5</span>
-		    </div>
 	    </div>
       <div class="card_hotel">
       	<img class="img_card" src="img/card-hotels2.jpg" width="135" height="90" alt="Изображение гостиницы Desert Quail Inn»" >
       	<div class="text_cardhotel">
-      	  <h2 class="name-hotel">Desert Quail Inn</h2>
+      	  <h2 class="name_hotel">Desert Quail Inn</h2>
       	  <p class="price">Мотель От 3000 Р.</p>
       	  <div class="flex_container">
-      	    <a href="#" class="card-link" >Подробнее</a>
-      	    <button class="button-reservation">Забронировать</button>
+      	    <a href="#" class="card_link" >Подробнее</a>
+      	    <button class="button_reservation">Забронировать</button>
       	  </div>
       	</div>
       	<span class="rating">Рейтинг: 8,9</span>
@@ -49,28 +52,32 @@
       <div class="card_hotel">
       	<img class="img_card" src="img/card-hotels3.jpg" width="135" height="90" alt="Изображение гостиницы Villas at Poco Diablo»" >
       	<div class="text_cardhotel">
-				  <h2 class="name-hotel">Villas at Poco Diablo</h2>
+				  <h2 class="name_hotel">Villas at Poco Diablo</h2>
 		 			<p class="price">Апартаменты От 2000 Р.</p>
 		 			<div class="flex_container">
-		 				<a href="#" class="card-link" >Подробнее</a>
-		 				<button class="button-reservation">Забронировать</button>
+		 				<a href="#" class="card_link" >Подробнее</a>
+		 				<button class="button_reservation">Забронировать</button>
 		 			</div>
 		 		</div>
 		 		<span class="rating">Рейтинг: 9,2</span>
       </div>
 		</section>
   </main>
-	<footer class="main-footer">
-  	  <span>#visitSEDONA</span>
-      <ul class="social_icon-list">
-    	<li class="social-button"><a href="https://www.vkontakte.com/sedona" aria-label="Sedona В контакте">Вконтакте</a></li>
-    	<li class="social-button"><a href="https://www.facebook.com/sedona"  aria-label="Sedona на Фейсбуке">Фейсбук</a></li>
-    	<li class="social-button"><a href="https://www.yotube.com/sedona" aria-label="Sedona на Ютуб">Ютуб</a></li>
-      </ul>
-     <p>
-       <span>Website by</span>
-       <a href="https://htmlacademy.ru/intensive/htmlcss" class="logo-footer"><img src="img/logo_htmlacademy.svg" width="115" height="40" alt="Логитип разработчиков сайта «HTML Академия»"></a>
-     </p>
+	
+	<footer class="main_footer">
+ 	  <div class="wrapper_footer">
+  	<span claass="hashtag">#visitSEDONA</span>
+    <ul class="social_icon-list">
+    	<li class="social_button"><a href="https://www.vkontakte.com/sedona" aria-label="Sedona В контакте">Вконтакте</a></li>
+    	<li class="social_button"><a href="https://www.facebook.com/sedona" aria-label="Sedona на Фейсбуке">Фейсбук</a></li>
+    	<li class="social_button"><a href="https://www.yotube.com/sedona" aria-label="Sedona на Ютуб">Ютуб</a></li>
+    </ul>
+    <p class="logo_footer">
+      <span>Website by</span>
+      <a href="https://htmlacademy.ru/intensive/htmlcss" class="img-footer"><img src="img/logo_htmlacademy.svg" width="115" height="40" alt="Логитип разработчиков сайта «HTML Академия»"></a>
+	  </p>
+	  </div>
 	</footer>
+	</div>
 </body>
 </html>
