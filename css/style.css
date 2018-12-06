@@ -11,6 +11,8 @@ body {
 	width:100%;
   margin: 0;
   padding: 0;
+	
+	position: relative;
   
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
@@ -51,28 +53,18 @@ body {
 
 .site_navigation {
 	margin: 0px;
-	padding: 20px 55px;
+	padding: 15px 55px;
 	
 	display: flex;
+	justify-content: space-between;
 	
 	
 	background-color: #ffffff;
 }
 
-
-
-.navigation:nth-child(n+2){
+.navigation:nth-child(2){
 	
-}
-
-.navigation:nth-last-child(4) {
-	
-	margin-right: auto;
-	
-}
-
-.navigation:first-child(1) {
-	margin-left: auto;
+	margin-right: 220px;
 	
 }
 
@@ -139,6 +131,7 @@ a {
 }
 
 .welcome::after {
+	width: 1200px;
 	background: url('../img/intro_mask.svg') 100% no-repeat;
 }
 
@@ -155,6 +148,10 @@ a {
 b {
   font-size: 21px;
   text-align: center;
+}
+
+a {
+	display: block;
 }
 
 .features {
@@ -190,9 +187,28 @@ b {
 
 .feature_inner {
 	width: 400px;
+	
+	position: relative;
+	
 	text-align: center;
 	outline: 1px solid red;
+	
 }
+
+.features_icon1::before {
+ content: "";
+	
+	width: 75px;
+	height: 73px;
+	
+	position: absolute;
+	top:50px;
+	left:162px;
+	
+	background-image: url(../img/icon_home.svg) no-repeat;
+	background-position: 0 0;	
+}
+
 
 .features_2 {
 	display: flex;
@@ -348,7 +364,6 @@ h4 {
 	flex-direction: column;
 	justify-content: center;
 	
-	position: relative;
 	
 	width: 1200px;
 }
@@ -369,7 +384,8 @@ h4 {
   font-weight: 700;
 	
 	position: absolute;
-	top: center;
+	left: 50%;
+	transform: translate(-50%;0);
   
   background-color: #ffffff;
 	box-shadow: 0px 5px 15px 0px rgba(0, 1, 1, 0.2);
@@ -520,7 +536,10 @@ h4 {
 	
 }
 
-
+img {
+	max-width: 100%;
+	height: auto;
+}
 
 .flex_container{
 	display: flex;
@@ -586,22 +605,31 @@ h4 {
 	width: 460px;
 	display: flex;
 	flex-direction: row;
-	outline: 1px solid red;
 }
 
 
 
 .main_footer {
 	width: 1200px;
-	padding: 36px 0;
-	background-color:rgba(255,255,255,0.3);
+	padding: 36px 120px;
+	font-size: 21px;
+	
+	box-sizing: border-box;
+	
+	position: absolute;
+	bottom:0px;
+		
+	background-color:rgba(255,255,255,0.8);
+	
 }
 
 
 .wrapper_footer {
 	display: flex;
-	justify-content: space-around;
+	flex-wrap: nowrap;
+	justify-content: space-between;
 	align-items: baseline;
+	position: relative;
 }
 
 
@@ -610,23 +638,82 @@ h4 {
 	width: 136px;
 	margin: 0px;
   font-size: 21px;
+	line-height: 26px;
 }
 
 
 .social_icon-list {
-	margin: 0px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	
 	width: 152px;
+	
+	margin-left:auto;
+	margin-right:180px;
+	padding: 0;
 	text-align: center;
 }
 
-.img_footer:hover:before {
+.social_icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	
+ 	width: 46px;
+	height: 46px;
+	
+	background-color: #81b3d2;
+}
+
+.social_icon:hover
+.social_icon:focus {
+	background-color: #669ec0;
+}
+
+.social_icon:active {
+	fill:rgba(0, 0, 0, 0.5);
+	background-color: #5496bd;
+}
+
+
+.img_footer {
 }
 
 .logo_footer {
+	display: flex;
+	justify-content:space-between;
+	
+	align-items: baseline;
+	
 	width: 198px;
 	margin: 0px;
+	
 	text-align: center;
+}
+
+.logo_footer span {
+	margin: 0px;
+	margin-right:5px;
+	font-size: 14px;
+	font-weight: 400;
+	
+}
+
+.img_footer:hover:after {
+	content: "";
+	
+	
+	width: 115px;
+	height: 40px;
+	
+	position: absolute;
+	top:40px;
+	left:80px;
+	
+	background-image: url(../img/logo_htmlacademy_hover.svg) no-repeat;
+	background-position: 0 0;
 }
 
 .social_button a {
