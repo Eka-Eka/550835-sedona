@@ -27,13 +27,13 @@
 		<section class="features">
  		  <div class="wrapper_features">
   		<h2 class="visually_hidden">Преимущества</h2>
-  		<p><b class=subtitle_content>Седона-небольшой городок в Аризоне,<br> заслуживающий большего!</b></p>
-    	<p class="subtitle_features">Рассмотрим 5 причин по которым, Седона круче, чем Гранд Каньон</p>
+  		<p><b class="subtitle_content">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</b></p>
+    	<p class="subtitle_features">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
     	</div>
     	<section class="features_1">
      	  <div class="text_1">
-      	<h3>Настоящий городок</h3>
-      	<span>№1</span>
+      	<h3 class="subtitle_inner">Настоящий городок</h3>
+      	<span class="features_number1">№1</span>
       	<p>Седона — не аттракцион для туристов, там течет своя жизнь</p>
       	</div>
       	<img src="img/img_citysedona.jpg" width="800" height="256" alt="Изображение городка Седона»">
@@ -41,25 +41,23 @@
       <section class="features1_inner">
       	<ul class="feature_list">
       		<li class="feature_inner">
-						<i class="features_icon1"></i>
-						<h3>Жилье</h3>
+						<h3 class="title_features1">Жилье</h3>
 						<p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
         	</li>
           <li class="feature_inner">
           	<i class="features_icon2"></i>
-						<h3>Еда</h3>
+						<h3 class="title_features2">Еда</h3>
 						<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </li>
           <li class="feature_inner">
-						<i class="features_icon3"></i>
-						<h3>Сувениры</h3>
+						<h3 class="title_features3">Сувениры</h3>
 						<p>Не только китайского, но и местного производства!</p>
           </li>
 				</ul>
 			</section>
 			<section class="features_2">
    			<div class="text_1">
-    		<h3>Там есть мост дьявола</h3>
+    		<h3 class="subtitle_inner">Там есть<br>мост дьявола</h3>
     		<span>№2</span>
       	<p>Да по нему можно пройти! Если конечно вы осмелитесь</p>
       	</div>
@@ -95,23 +93,23 @@
     	<form class="form_booking" action="https://sedona.ru" method="post">
     	<button class="button_title" type="button">Поиск гостиниц в Седоне</button>
   			<p class="fields">
-   				<label for="date-arrival">Дата заезда</label>
-   				<input id="date-arrival"  type="text" name="date" value="" placeholder="24 апреля 2017">
+   				<label for="date-arrival">Дата заезда:</label>
+   				<input class="text_datearrival" id="date-arrival"  type="text" name="date" value="" placeholder="24 апреля 2017">
    			</p>
    			<p class="fields">
-   				<label for="date-departure">Дата выезда</label>
-   				<input id="date-departure" type="text" name="date" value="" placeholder="4 июля 2017">
+   				<label for="date-departure">Дата выезда:</label>
+   				<input  class="date_departure" id="date-departure" type="text" name="date" value="" placeholder="4 июля 2017">
    			</p>
    			<p class="fields_2">
-   				<label for="number-of-adults">Взрослые</label>
-   				<button class="button_minus" type="button">-</button>
-   				<input class="number-of-adults" id="number-of-adults" type="text" name="number-of-adults" value="2" placeholder="2">
+   				<label class="number_of_adults" for="number-of-adults">Взрослые:</label>
+   				<button class="button_minus" type="button">−</button>
+   				<input class="text_of_adults" id="number-of-adults" type="text" name="number-of-adults" value="2" placeholder="2">
    				<button class="button_plus" type="button">+</button>
    			</p>
    			<p class="fields_2" >
-   				<label for="number-of-children">Дети</label>
-   				<button class="button_minus" type="button" >-</button>
-   				<input  class="number-of-children" id="number-of-children" type="text" name="number-of-children" value="0" placeholder="0">
+   				<label class="number_of_children" for="number-of-children">Дети:</label>
+   				<button class="button_minus" type="button" >−</button>
+   				<input  class="text_of_children" id="number-of-children" type="text" name="number-of-children" value="0" placeholder="0">
    				<button class="button_plus" type="button">+</button>
    			</p>
    			<button class="button_submit" type="submit">Найти</button>
