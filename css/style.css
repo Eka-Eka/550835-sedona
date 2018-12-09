@@ -31,9 +31,10 @@ select {
   font-family: inherit;
 }
 
-h4 {
+.title_search_hotels {
   margin: 0;
-  padding-bottom: 35px;
+	margin-top: 55px;
+  margin-bottom: 20px;
 
   font-size: 30px;
   line-height: 36px;
@@ -169,7 +170,7 @@ h4 {
 
 .features1_inner {
   width: 1200px;
-  margin-bottom: 67px;
+  margin-bottom: 65px;
 }
 
 .feature_list {
@@ -177,6 +178,10 @@ h4 {
   align-content: center;
   margin: 0;
   padding: 0;
+}
+
+.title_features_list {
+	padding: 0 70px;
 }
 
 .feature_inner {
@@ -268,7 +273,7 @@ h4 {
 .wrapper_features {
 	position: relative;
 	
-	padding-top: 50px; 
+	padding-top: 48px; 
 	padding-bottom:50px; 
 	
 	text-align: center;
@@ -293,7 +298,7 @@ h4 {
 
 .subtitle_features {
 	margin: 0;
-	margin-top: 20px;
+	margin-top: 25px;
 	
 	font-size: 14px;
 	line-height: 26px;
@@ -301,7 +306,12 @@ h4 {
 
 p.subtitle_content  {
 	margin: 0;
-	margin-top: 30px;
+	margin-top: 40px;
+	
+	font-size: 14px;
+	line-height: 26px;
+	color: #333;
+	
 }
 
 .subtitle_inner {
@@ -324,20 +334,21 @@ p.subtitle_content  {
 
 .features_3 {
   width: 1200px;
-
-  margin-bottom: 60px;
-  padding-bottom: 65px;
+	
+  padding-bottom: 45px;
   padding-top: 50px;
+	
+	background-color: #eee;
 }
 
 .title_features_list {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .features_number {
   margin: 0;
-  margin-bottom: 30px;
+	margin-bottom: 15px;
 }
 
 .feature_three {
@@ -394,12 +405,8 @@ p.subtitle_content  {
   color: #333;
 }
 
-.feature_three p {
-  padding-top: 15px;
-}
-
-.features_3 {
-  background-color: #eee;
+.features_3 p {
+	margin-top: 23px;
 }
 
 .feature_list {
@@ -409,7 +416,7 @@ p.subtitle_content  {
 
 .subtitle {
   margin: 0;
-  margin-bottom: 140px;
+  margin-bottom: 110px;
 
   line-height: 24px;
   font-weight: 400;
@@ -619,18 +626,25 @@ label.number_of_children {
   margin: 0;
 }
 
-.flex_rating {
-  display: flex;
-  justify-content: flex-end;
-
-  align-items: flex-end;
-}
-
 .rating {
   width: 111px;
   margin-left: auto;
 
   background-color: #f2f2f2;
+}
+
+.rating:before {
+	content: "";
+
+  width: 18px;
+  height: 17px;
+	
+	display: block;
+  position: absolute;
+	bottom: 100%;
+	left: 98%;
+
+  background-image: url(../img/star_rating.svg);
 }
 
 .flex_container {
@@ -640,6 +654,18 @@ label.number_of_children {
 .name_hotel,
 .price {
   margin: 0;
+}
+
+.title_hotel {
+	text-decoration: none;
+}
+
+.name_hotel:hover {
+	color: #81b3d2;
+}
+
+.name_hotel:active {
+	color: rgba(0, 0, 0, 0.5);
 }
 
 .name_hotel {
@@ -660,6 +686,10 @@ label.number_of_children {
 	text-align: center;
 	vertical-align: middle;
   color: #666;
+}
+
+.card_hotel {
+	position: relative;
 }
 
 .card_link {
@@ -691,6 +721,28 @@ label.number_of_children {
   border: none;
 }
 
+.calendar {
+	position: absolute;
+	top: 18%;
+	left:92%;
+	
+	border: none;
+	background-color: transparent;
+	outline: transparent;
+}
+
+.calendar_color {
+	fill: #a9a9a9;
+}
+
+.calendar_color:hover {
+	fill: #000;
+}
+
+.calendar_color:active {
+	fill: #81b3d2;
+}
+
 .fields {
   width: 460px;
 	
@@ -698,6 +750,7 @@ label.number_of_children {
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
+	position: relative;
 	
 	margin: 0;
 	margin-bottom: 30px;
@@ -705,12 +758,13 @@ label.number_of_children {
 
 .main_footer {
   width: 1200px;
-  padding: 36px 120px;
+	margin: 0;
+  padding: 15px 145px;
+  position: absolute;
+	
   font-size: 21px;
-
   box-sizing: border-box;
 
-  position: absolute;
   bottom: 0;
 
   background-color: rgba(255,255,255,.8);
@@ -720,7 +774,7 @@ label.number_of_children {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   position: relative;
 }
 
@@ -739,8 +793,7 @@ label.number_of_children {
 
   width: 152px;
 
-  margin-left: auto;
-  margin-right: 180px;
+  margin-left: 60px;
   padding: 0;
   text-align: center;
 }
@@ -785,20 +838,14 @@ label.number_of_children {
   font-weight: 400;
 }
 
-.img_footer:hover:after {
-  content: "";
-
-  width: 115px;
-  height: 40px;
-
-  position: absolute;
-  top: 40px;
-  left: 80px;
-
-  background: url(../img/logo_htmlacademy_hover.svg) no-repeat left top;
+.img_footer:hover {
+ fill;
 }
 
 .social_button a {
   color: #000;
 }
+
+
+
 
