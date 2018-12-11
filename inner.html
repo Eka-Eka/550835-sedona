@@ -19,17 +19,67 @@
 		</ul>
 	</nav>
 	<section class="filter">
-	
-		
+		<div class="wrapper_infrastructure">
+			<p>Инфраструктура:</p>
+			<ul class="infrastructure_list">
+				<li>
+					<input class="pool" id="pool" type="checkbox" value="">
+					<label for="pool">Бассейн</label>
+					</li>
+				<li>
+					<input class="parking" id="parking" type="checkbox" value="">
+					<label for="pool">Парковка</label>
+				</li>
+				<li>
+					<input class="wi-fi" id="wi-fi" type="checkbox" value="">
+					<label for="wi-fi">WI-FI</label>
+				</li>			
+			</ul>
+		</div>
+		<div class="wrapper_type_house">
+			<p>Тип жилья:</p>
+			<ul class="type_house_list">
+				<li>
+					<input class="hostel" id="hostel" type="checkbox" value="">
+					<label for="hostel">Гостиница</label>
+				</li>
+				<li>
+					<input class="motel" id="motel" type="checkbox" value="">
+					<label for="motel">Мотель</label>
+				</li>
+				<li>
+					<input class="apartments" id="apartments" type="checkbox" value="">
+					<label for="apartments">Апартаменты</label>
+				</li>			
+			</ul>
+		</div>
+		<div class="wrapper_cost_day">
+			<p>Стоимость в сутки (Р):</p>
+			<span>от 0</span>
+			<span>до 3000</span>
+			<input type="range">
+			<a href="#">Показать</a>
+		</div>
 	</section>
   <main class="container_hotels">
+		<section class="sorting">
+			<p>Найдено: 3</p>
+			<ul class="sorting_list">
+				<li>Сортировка</li>
+				<li><a href="#">По цене</a></li>
+				<li><a href="#">По типу</a></li>
+				<li><a href="#">По рейтингу</a></li>
+			</ul>
+		</section>
   	<section class="list_card">
   	  <h1 class="visually_hidden">Бронирование гостиниц</h1>
       <div class="card_hotel">
         <img class="img_card" src="img/card-hotels1.jpg" width="135" height="90" alt="Изображение гостиницы Amara Resort & Spa»" >
         <div class="text_cardhotel">
       	  <a class="title_hotel" href="https://sedona.ru/hotels/amarta resort spa"><h2 class="name_hotel">Amara Resort Spa</h2></a>
-      	  <p class="price">Гостиница От 4000 Р.</p>
+      	  <p class="price">Гостиница 
+      	  	<span class="wrapper_price">От 4000 Р.</span>
+      	  </p>
       	  <div class="flex_container">
       	    <a href="#" class="card_link" >Подробнее</a>
       	    <button class="button_reservation">Забронировать</button>
@@ -66,7 +116,7 @@
 	
 	<footer class="main_footer">
  	  <div class="wrapper_footer">
-  	<span claass="hashtag">#visitSEDONA</span>
+  	<span class="hashtag">#visitSEDONA</span>
     <ul class="social_icon-list">
     	<li class="social_button">
     	  <a class="social_icon" href="https://www.vkontakte.com/sedona" aria-label="Sedona В контакте">
