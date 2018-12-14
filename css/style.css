@@ -949,6 +949,8 @@ b.title_cost_day {
 	background-image: url(../img/radio_button.svg)
 }
 
+
+
 .cost input[type="text"] {
 	margin: 0;
 	padding: 0;
@@ -1102,12 +1104,13 @@ b.title_cost_day {
 	width: 100%;
   display: flex;
   align-items: center;
-	padding: 30px 73px;
-	padding-top: 31px;
+	justify-content: center;
+	
+	padding: 28px 73px;
+	position: relative;
 	
   box-sizing: border-box;
 	border-top: 1px solid #e5e5e5;
-	position: relative;
 }
 
 .card_hotel:nth-child(4) {
@@ -1115,13 +1118,10 @@ b.title_cost_day {
 	border-bottom: 1px solid #e5e5e5;
 }
 
-
 .img_card {
   margin: 0;
   margin-right: 29px;
 
-  align-items: flex-end;
-  align-self: flex-end;
 }
 
 .list_card {
@@ -1133,42 +1133,57 @@ b.title_cost_day {
   width: 260px;
 	margin: 0;
 	
-  align-items: baseline;
-  align-self: flex-end;
 	box-sizing: border-box;
-
-  
 }
 
 span.wrapper_price {
 	margin-left: 35px;
 }
 
+.wrapper_rating {
+	width: 112px;
+	
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	
+	margin-left: auto;
+}
+
 .rating {
   width: 111px;
-  margin-left: auto;
+	margin: 0;
 	margin-top: auto;
+	text-align: center;
 
   background-color: #f2f2f2;
 }
 
+.star_icon {
+	margin: 0;
+	margin-left: auto;
+	margin-bottom: 37px;
+}
+
 .flex_container {
 	width: 260px;
-	text-align: center;
+	margin: 0;
 	
+	text-align: center;
 	box-sizing: border-box;
 }
 
-.name_hotel,
-.price {
+p.price {
   margin: 0;
+	margin-bottom: 10px;
 }
 
 .title_hotel {
+	margin: 0;
 	text-decoration: none;
 }
 
-.name_hotel:hover
+.name_hotel:hover,
 .name_hotel:focus {
 	color: #81b3d2;
 }
@@ -1178,11 +1193,15 @@ span.wrapper_price {
 }
 
 .name_hotel {
+	margin:0;
+	margin-bottom: 2px;
+	
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
-  text-transform: uppercase;
+	
   color: #000;
+	text-transform: uppercase;
 }
 
 .card_hotel .price {
@@ -1199,11 +1218,9 @@ span.wrapper_price {
 
 .price {
 	margin:0px;
-	margin-bottom: 10px;
 	padding: 0px;
 	
 	vertical-align: middle;
-	
 }
 
 .card_link {
