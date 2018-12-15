@@ -462,26 +462,31 @@ p.subtitle_content  {
   flex-wrap: wrap;
 
   width: 568px;
+	padding-top: 57px;
   font-weight: 700;
 
   position: absolute;
   left: 50%;
-	top: 23.5%;
+	top: 33%;
   transform: translate(-50%, 0);
   background-color: #fff;
   box-shadow: 0 5px 15px 0 rgba(0,1,1,.2);
 }
 
 .button_title {
-  width: 100%;
+  width: 568px;
 	margin: 0;
-  margin-bottom: 55px;
   padding: 0 20px;
 	padding-top: 31px;
 	padding-bottom: 28px;
 	
 	display: block;
-
+  position: absolute;
+	left: 50%;
+	top:23.5%;
+	
+  transform: translate(-50%, 0);
+	
   font-size: 21px;
   line-height: 26px;
   font-weight: 800;
@@ -489,7 +494,7 @@ p.subtitle_content  {
 
   text-transform: uppercase;
   text-align: center;
-
+	
   background-color: #766357;
   border: none;
 }
@@ -1056,6 +1061,7 @@ b.title_cost_day {
 .container_hotels {
   width: 1200px;
   margin: 0;
+	margin-bottom: 50px;
 }
  
 .wrapper_arrow {
@@ -1125,8 +1131,15 @@ b.title_cost_day {
 }
 
 .list_card {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	
+	margin-bottom: 30px;
   padding: 0;
-	padding-bottom: 100px;
+	padding-bottom: 70px;
+	
+	box-sizing: border-box;
 }
 
 .text_cardhotel {
@@ -1296,22 +1309,25 @@ p.price {
 .main_footer {
   width: 1200px;
 	margin: 0;
-  padding: 15px 145px;
-  position: absolute;
+  position: relative;
 	
   font-size: 21px;
   box-sizing: border-box;
-
-  bottom: 0;
-
-  background-color: rgba(255,255,255,.8);
 }
 
 .wrapper_footer {
+	width: 100%;
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
-  position: relative;
+	padding: 15px 145px;
+	
+	position: absolute;
+  bottom: 0;
+	
+	box-sizing: border-box;
+
+  background-color: rgba(255,255,255,.8);
 }
 
 span.hashtag {
@@ -1357,6 +1373,8 @@ span.hashtag {
 }
 
 .social_icon:hover,
+.social_icon1:hover,
+.social_icon1:focus,
 .social_icon:focus {
   background-color: #669ec0;
 }
@@ -1372,16 +1390,36 @@ span.hashtag {
   justify-content: space-between;
   align-items: center;
 
-  width: 198px;
+  width: 214px;
   margin: 0;
-	margin-right: -45px;
+	padding: 0;
+	padding-left: 10px;
+	margin-right: -60px;
 
   text-align: center;
 }
 
+.img_footer {
+	flex: auto;
+}
+
+.logo_htmlacademy {
+	margin: 0;
+	width: 140px;
+	height: 40px;
+	fill: #000;
+}
+
+.logo_htmlacademy:hover {
+	margin: 0;
+	width: 140px;
+	height: 40px;
+	fill:#81b3d2;
+}
+
 .logo_footer span {
   margin: 0;
-  margin-right: 5px;
+	
   font-size: 14px;
   font-weight: 400;
 }

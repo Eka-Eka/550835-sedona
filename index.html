@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
 <body>
@@ -90,8 +89,8 @@
     		<img class="map" src="img/map_sedona.jpg" width="1200" height="593" alt="Карта Седоны"  usemap="#map"/>
     		<map name="map"></map>
     		<h3 class="visually_hidden">Поиск гостиниц в Седоне</h3>
+    		<button class="button_title" type="button">Поиск гостиницы в Седоне</button>
     		<form class="form_booking" action="https://sedona.ru" method="post">
-    			<button class="button_title" type="button">Поиск гостиницы в Седоне</button>
   				<p class="fields">
    					<label for="date-arrival">Дата заезда:</label>
    					<input class="text_datearrival" id="date-arrival"  type="text" name="date" value="" placeholder="24 апреля 2017" autocomplete="off">
@@ -158,5 +157,9 @@
 	  </div>
 	</footer>
 	</div>
+	<script>
+		var buttonSearch = document.querySelector(".button_title");
+		var popup = document.querySelector(".form_booking");
+	</script>
 </body>
 </html>
