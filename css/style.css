@@ -8,7 +8,7 @@ body {
   line-height: 26px;
   font-weight: 700;
   color: #000;
-
+	
   text-transform: uppercase;
   background-color: #f2f2f2;
 }
@@ -31,9 +31,8 @@ select {
 
 .title_search_hotels {
   margin: 0;
-	margin-top: 55px;
+  margin-top: 55px;
   margin-bottom: 20px;
-
   font-size: 30px;
   line-height: 36px;
   text-align: center;
@@ -43,7 +42,7 @@ select {
   width: 1200px;
   margin: 0 auto;
   background-color: #fff;
-  box-shadow: 0 5px 15px 0 rgba(0,1,1,.2);
+  box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
 }
 
 .main_navigation {
@@ -52,7 +51,6 @@ select {
   padding: 0 72px;
   box-sizing: border-box;
   position: relative;
-
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 26px;
@@ -60,14 +58,17 @@ select {
   text-transform: uppercase;
 }
 
+.container,
+.main_footer {
+	font-family: "PT Sans", Arial, sans-serif; 
+}
+
 .site_navigation {
   margin: 0;
   padding: 15px 0;
-
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-
   background-color: #fff;
 	list-style-type: none;
 }
@@ -119,6 +120,10 @@ select {
 	color: #766357;
 }
 
+.navigation { 
+	width: 
+}
+
 .wrapper_welcome {
   width: 100%;
   display: flex;
@@ -131,8 +136,7 @@ select {
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
-
-  background: url('../img/background_photo.jpg') 100% no-repeat;
+  background: url("../img/background_photo.jpg") 100% no-repeat;
   background-color: #81b3d2;
   background-position: center -60px;
   background-size: cover;
@@ -141,7 +145,6 @@ select {
 .img_welcome {
   width: 459px;
   height: 353px;
-
   margin-top: 75px;
   margin-bottom: 80px;
 }
@@ -168,7 +171,6 @@ select {
 .features_1 {
   width: 1200px;
   margin-bottom: 60px;
-
   display: flex;
   justify-content: center;
 }
@@ -181,10 +183,8 @@ select {
 .feature_list {
   display: flex;
   align-content: center;
-	
   margin: 0;
   padding: 0;
-	
 	list-style-type: none;
 }
 
@@ -195,9 +195,7 @@ select {
 .feature_inner {
   width: 400px;
   position: relative;
-	
-	padding: 0px 50px;
-
+	padding: 0 50px;
   text-align: center;
 }
 
@@ -209,16 +207,13 @@ select {
 
 .title_features1::before {
   content: "";
-
   width: 75px;
   height: 72px;
-	
 	display: block;
   position: absolute;
 	top: 0;
 	left: 40%;
-
-  background-image: url(../img/icon_home.svg);
+  background-image: url("../img/icon_home.svg");
 }
 
 .title_features2 {
@@ -229,16 +224,13 @@ select {
 
 .title_features2::before {
   content: "";
-
   width: 74px;
   height: 70px;
-	
 	display: block;
   position: absolute;
 	top: 0;
 	left: 40%;
-
-  background-image: url(../img/icon_food.svg);
+  background-image: url("../img/icon_food.svg");
 }
 
 .title_features3 {
@@ -249,16 +241,13 @@ select {
 
 .title_features3::before {
   content: "";
-
   width: 64px;
   height: 76px;
-	
 	display: block;
   position: absolute;
 	top: -1.5%;
 	left: 42%;
-
-  background-image: url(../img/icon_gift.svg);
+  background-image: url("../img/icon_gift.svg");
 }
 
 .features_1 p,
@@ -267,11 +256,10 @@ select {
 }
 
 .features_2 {
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-
-  width: 100%;
 }
 
 .order {
@@ -280,26 +268,23 @@ select {
 
 .wrapper_features {
 	position: relative;
-	
 	padding-top: 48px; 
-	padding-bottom:50px; 
-	
+	padding-bottom: 50px;
 	text-align: center;
 }
 
 .wrapper_features::before {
   content: "";
-
   width: 1200px;
   height: 60px;
   display: block;
   position: absolute;
   bottom: 98%;
-
   background: url('../img/intro_mask.svg') no-repeat;
 }
 
-.subtitle_content, .subtitle_features {
+.subtitle_content, 
+.subtitle_features {
   text-align: center;
   vertical-align: middle;
 }
@@ -307,45 +292,39 @@ select {
 .subtitle_features {
 	margin: 0;
 	margin-top: 25px;
-	
 	font-size: 14px;
 	line-height: 26px;
 }
 
-p.subtitle_content  {
+p.subtitle_content {
 	margin: 0;
 	margin-top: 40px;
-	
+	padding-left: 200px;
+	padding-left: 200px;
 	font-size: 14px;
 	line-height: 26px;
 	color: #333;
-	
 }
 
 .subtitle_inner {
 	padding: 0px 55px;
-	
 	font-size: 21px;
 	line-height: 21px;
 }
 
 .text_1 {
   width: 400px;
-
   padding-top: 30px;
   padding-left: 50px;
   padding-right: 50px;
-
   text-align: center;
   box-sizing: border-box;
 }
 
 .features_3 {
   width: 1200px;
-	
   padding-bottom: 45px;
   padding-top: 50px;
-	
 	background-color: #eee;
 }
 
@@ -362,7 +341,6 @@ p.subtitle_content  {
 .feature_three {
   width: 400px;
   padding:  0 70px;
-
   text-align: center;
 }
 
@@ -371,7 +349,6 @@ p.subtitle_content  {
   line-height: 26px;
   font-weight: 400;
   color: #333;
-
   text-align: center;
 }
 
@@ -428,21 +405,17 @@ p.subtitle_content  {
 .subtitle {
   margin: 0;
   margin-bottom: 132px;
-
   line-height: 24px;
   font-weight: 400;
   color: #333;
-
   text-align: center;
 }
 
 .wrapper_map {
 	width: 1200px;
-	
   display: flex;
   flex-direction: column;
   justify-content: center;
-
 	position: relative;
 }
 
@@ -456,19 +429,19 @@ p.subtitle_content  {
 }
 
 .form_booking {
-  display: flex;
+	width: 568px;
+	padding-top: 57px;
+	display: flex;
+	flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-
-  width: 568px;
-	padding-top: 57px;
-  font-weight: 700;
-
+	
   position: absolute;
   left: 50%;
 	top: 33%;
-  transform: translate(-50%, 0);
+	transform: translate(-50%, 0);
+	
+	font-weight: 700;
   background-color: #fff;
   box-shadow: 0 5px 15px 0 rgba(0,1,1,.2);
 }
@@ -483,20 +456,18 @@ p.subtitle_content  {
 	display: block;
   position: absolute;
 	left: 50%;
-	top:23.5%;
-	
+	top: 23.5%;
   transform: translate(-50%, 0);
 	
   font-size: 21px;
   line-height: 26px;
   font-weight: 800;
   color: #fff;
-
   text-transform: uppercase;
   text-align: center;
-	
   background-color: #766357;
   border: none;
+	cursor: pointer;
 }
 
 .fields label {
@@ -534,7 +505,6 @@ label.number_of_children {
   width: 38px;
 	margin: 0;
 	padding: 4px 0;
-	
 	text-align: center;
 	vertical-align: middle;
 }
@@ -547,7 +517,7 @@ label.number_of_children {
 }
 
 .form_booking input[type="text"] {
-	margin:0;
+	margin: 0;
 	padding: 4px 0px;
   font: inherit;
 	border: 2px solid transparent;
@@ -557,16 +527,38 @@ label.number_of_children {
 	outline: none;
 }
 
+::-webkit-input-placeholder {
+	color: #000;
+}
+::-moz-placeholder {
+	color: #000;
+}/* Firefox 19+ */
+
+:-moz-placeholder {
+	color: #000;
+}/* Firefox 18- */
+
+:-ms-input-placeholder {
+	color: #000;
+}
+
+:focus::-webkit-input-placeholder {
+	color: transparent
+}
+:focus::-moz-placeholder {
+	color: transparent
+}
+:focus:-moz-placeholder {
+	color: transparent
+}
+:focus:-ms-input-placeholder {
+	color: transparent
+}
+
 .form_booking input.text_datearrival[type="text"],
 .form_booking input.date_departure[type="text"] {
 	padding-left: 13px;
 	text-transform: uppercase;
-}
- 
-
-.form_booking input.text_datearrival[type="text"]:-webkit-input-placeholder,
-.form_booking input.date_departure[type="text"]:-webkit-input-placeholder {
-	color: #000;
 }
 
 .form_booking input:hover {
@@ -584,17 +576,16 @@ label.number_of_children {
 .button_plus {
 	width: 38px;
 	margin: 0;
-	padding: 6px 0;
-	
-  font-size: 24px;
+	padding: 8px 0px 4px 0px;
+  font-size: 21px;
   line-height: 26px;
-  font-weight: 900;
+  font-weight: 600;
   color: #a9a9a9;
 	align-items: center;
-	
   background-color: #f2f2f2;
   border: none;
 	outline: none;
+	cursor: pointer;
 }
 
 .button_minus:hover,
@@ -609,12 +600,12 @@ label.number_of_children {
 	color: #81b3d2;
 	border: none;
 	outline: transparent;
+	cursor: pointer;
 }
 
 .button_submit {
 	margin-bottom: 53px;
   padding: 16px 196px;
-
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -622,9 +613,9 @@ label.number_of_children {
 	vertical-align: middle; 
   color: #fff;
   text-transform: uppercase;
-
   border: none;
   background-color: #81b3d2;
+	cursor: pointer;
 }
 
 .button_submit:hover,
@@ -640,14 +631,12 @@ label.number_of_children {
 }
 
 .filter {
-	display: flex;
-	flex-wrap: wrap;
-	
-	margin:0;
+	margin: 0;
 	padding: 0;
 	padding-bottom: 11px;
-	
-  background: url('../img/filter_background.jpg') 100% no-repeat;
+	display: flex;
+	flex-wrap: wrap;
+  background: url("../img/filter_background.jpg") 100% no-repeat;
   background-color: #81b3d2;
   background-position: center;
 }
@@ -662,7 +651,6 @@ label.number_of_children {
 	width: 185px;
 	display: flex;
 	flex-wrap: wrap;
-	
 	margin-left: 73px;
 	margin-top: 29px;
 }
@@ -671,7 +659,6 @@ label.number_of_children {
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
-	
 	color: #fff;
 	font-weight: 400;
 }
@@ -685,7 +672,6 @@ label.number_of_children {
 	margin: 0;
 	margin-bottom: 20px;
 	padding: 0;
-	
 	font-size: 16px;
 	line-height: 21px;
 	font-weight: 800;
@@ -698,65 +684,50 @@ label.number_of_children {
 	position: relative;
 }
 
-.infrastructure svg.checkbox_checked,
-.type_house svg.checkbox_checked {
-	position: absolute;
-	left: 0;
-	top: -5px;
-	
-	fill: #fff;
+.checkbox_check + label,
+.checkbox + label {
+	position: relative;
+	cursor: pointer;
 }
 
-.infrastructure:hover svg.checkbox_checked,
-.type_house:hover svg.checkbox_checked {
+.checkbox_check + label:before {
+	content: "";
 	position: absolute;
 	left: 0;
 	top: -5px;
-	
-	fill: #fff;
+	width: 27px;
+	height: 23px;
+	background-image: url("../img/checkbox_on.svg")
 }
 
-.infrastructure:focus svg.checkbox_checked,
-.type_house:focus svg.checkbox_checked {
+.checkbox_check:checked + label:before {
+	content: "";
 	position: absolute;
 	left: 0;
 	top: -5px;
-	
-	fill: #fff;
+	width: 23px;
+	height: 23px;
+	background-image: url("../img/checkbox_off.svg")
 }
 
-.infrastructure:disabled svg.checkbox_checked,
-.type_house:disabled svg.checkbox_checked {
+.checkbox + label:before {
+	content: "";
 	position: absolute;
 	left: 0;
 	top: -5px;
-	
-	fill: rgba (0, 0, 0, 0.3);
+	width: 23px;
+	height: 23px;
+	background-image: url("../img/checkbox_off.svg")
 }
 
-.infrastructure svg.checkbox {
+.checkbox:checked + label:before {
+	content: "";
 	position: absolute;
 	left: 0;
 	top: -5px;
-	
-	fill: #fff;
-}
-
-.infrastructure:hover svg.checkbox,
-.infrastructure:focus svg.checkbox {
-	position: absolute;
-	left: 0;
-	top: -5px;
-	
-	fill: #fff;
-}
-
-.infrastructure:disabled svg.checkbox {
-	position: absolute;
-	left: 0;
-	top: -5px;
-	
-	fill: rgba (0, 0, 0, 0.3);
+	width: 27px;
+	height: 23px;
+	background-image: url("../img/checkbox_on.svg")
 }
 
 .wrapper_house {
@@ -764,7 +735,6 @@ label.number_of_children {
 	display: flex;
 	flex-wrap: wrap;
 	margin: 0;
-	
 	margin-left: 69px;
 	margin-top: 29px;
 }
@@ -773,7 +743,6 @@ label.number_of_children {
 	margin: 0;
 	margin-bottom: 21px;
 	padding: 0;
-	
 	font-size: 16px;
 	line-height: 21px;
 	font-weight: 800;
@@ -784,7 +753,6 @@ label.number_of_children {
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
-	
 	color: #fff;
 	font-weight: 400;
 }
@@ -795,14 +763,12 @@ label.number_of_children {
 	margin-top: 26px;
 	margin-left: auto;
 	margin-right: 75px;
-	
 }
 
 b.title_cost_day {
 	margin: 0;
 	margin-bottom: 15px;
 	padding: 0;
-	
 	font-size: 16px;
 	line-height: 21px;
 	color: #fff;
@@ -810,7 +776,7 @@ b.title_cost_day {
 
 .cost {
 	width: 100%;
-	margin-top:5px;
+	margin-top: 5px;
 	margin-bottom: 23px;
 	padding: 3px 0px;
 	display: flex;
@@ -818,7 +784,6 @@ b.title_cost_day {
   justify-content: center;
 	align-items: baseline;
 	position: relative;
-	
 	border: 2px solid #fff;
 	border-radius: 2px;
 }
@@ -826,12 +791,9 @@ b.title_cost_day {
 .cost:after {
 	content: "";
 	height: 70%;
-	
 	position: absolute;
 	left: 50%;
-	
 	border-left: 2px solid #fff;
-	
 }
 
 .initial_price1 {
@@ -850,7 +812,6 @@ b.title_cost_day {
 .final_price1 {
 	margin: 0;
 	margin-left: 67px;
-	
 	color: #fff;
 	font-weight: 400;
 }
@@ -860,16 +821,15 @@ b.title_cost_day {
 	margin-left: 85px;
 	margin-top: 13px;
 	padding: 5px 35px;
-	
 	font-size: 14px;
 	line-height: 21px;
 	font-weight: 400;
 	color: #fff;
 	text-transform: uppercase;
-	
 	background-color: transparent;
-	border:2px solid #fff;
+	border: 2px solid #fff;
 	border-radius: 2px;
+	cursor: pointer;
 }
 
 .button_filter:hover {
@@ -877,15 +837,13 @@ b.title_cost_day {
 	margin-left: 85px;
 	margin-top: 13px;
 	padding: 5px 35px;
-	
 	font-size: 14px;
 	line-height: 21px;
 	font-weight: 400;
 	color: #000;
 	text-transform: uppercase;
-	
 	background-color: #ffff;
-	border:2px solid #fff;
+	border: 2px solid #fff;
 	border-radius: 2px;
 }
 
@@ -897,77 +855,62 @@ b.title_cost_day {
 
 .slider:after {
 	content: "";
-	
 	width: 319px;
 	height: 20px;
 	position: absolute;
 	bottom: 50%;
-	
 	border-bottom: 2px solid rgba(255, 255, 255, 0.3);
 }
 
 .slider:before {
 	content: "";
-	
 	width: 273px;
 	height: 20px;
 	position: absolute;
 	bottom: 50%;
-	
 	border-bottom: 2px solid #fff;
 }
 
 .slider_button {
 	width: 20px;
 	height: 22px;
-	
 	position: absolute;
 	top: -11px;
-	
 	z-index: 1;
-	background-image: url(../img/radio_button.svg)
+	background-image: url("../img/radio_button.svg")
 }
 
 .slider_button_left {
 	left: 0;
-	
 	z-index: 1;
-	background-image: url(../img/radio_button.svg)
+	background-image: url("../img/radio_button.svg")
 }
 
 .slider_button_right {
 	width: 20px;
 	height: 22px;
-	
 	position: absolute;
 	left: 255px;
-	
 	z-index: 1;
-	background-image: url(../img/radio_button.svg)
+	background-image: url("../img/radio_button.svg")
 }
 
 .slider_button_left {
 	top: -11px;
 	left: 0;
-	
 	z-index: 1;
-	background-image: url(../img/radio_button.svg)
+	background-image: url("../img/radio_button.svg")
 }
-
-
 
 .cost input[type="text"] {
 	margin: 0;
 	padding: 0;
 	margin-left: 3px;
-	
 	font-size: 14px;
 	line-height: 21px;
 	color: #fff;
 	font-weight: 400;
-	
 	vertical-align: baseline;
-	
 	background: none;
 	border:none;
 	outline: transparent;
@@ -979,54 +922,46 @@ b.title_cost_day {
 	padding-bottom: 27px;
 	display: flex;
 	flex-wrap: wrap;
-	
 	box-sizing: border-box;
 }
 
 .title_sorting {
-	margin:0;
-	padding:0;
+	margin: 0;
+	padding: 0;
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: 800;
-	
 }
 
 .sorting_list {
 	width: 450px;
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	
 	margin: 0;
 	margin-top: 2px; 
 	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
 	list-style: none;
 }
 
 .subtitle_sorting { 
 	margin-left: 50px;
 	margin-right: 40px;
-	
 	font-size: 12px;
 	line-height: 18px;
 	font-weight: 400;
 	color: #000;
-	
 	text-decoration: none;
-	
 }
 
 .sorting_list li a {
-	margin:0px;
+	margin: 0px;
 	margin-right: 33px;
-	padding:0px;
-	
+	padding: 0px;
 	font-size: 12px;
 	line-height: 18px;
 	font-weight: 400;
 	color: #b2b2b2;
-	
 	text-decoration: none;
 	border-bottom: 1px dotted #81b3d2;
 }
@@ -1061,60 +996,56 @@ b.title_cost_day {
 .container_hotels {
   width: 1200px;
   margin: 0;
-	margin-bottom: 50px;
 }
- 
+
 .wrapper_arrow {
 	width: 40px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-	
 	margin: 0;
 	margin-left: auto;
 	padding: 0;
-	
 	box-sizing: border-box;
 }
 
-.downarrow_navigation {
+.downarrow {
 	width: 11px;
 	margin: 0;
 	padding: 0;
-	
 	border: none;
 	background-color: transparent;
 	outline: transparent;
+	cursor: pointer;
 }
 
-.downarrow_navigation svg {
+.downarrow svg {
 	fill: #81b3d2;
 }
 
-.uparrow_navigation svg {
+.uparrow svg {
 	fill: #cacaca;
 }
 
-.uparrow_navigation {
+.uparrow {
 	width: 11px;
 	margin: 0;
+	padding: 0;
 	margin-right: 12px;
-	
 	border: none;
 	background-color: transparent;
 	outline: transparent;
-} 
+	cursor: pointer;
+}
 
 .card_hotel {
 	width: 100%;
+	padding: 29px 73px;
   display: flex;
   align-items: center;
 	justify-content: center;
-	
-	padding: 28px 73px;
 	position: relative;
-	
   box-sizing: border-box;
 	border-top: 1px solid #e5e5e5;
 }
@@ -1127,39 +1058,32 @@ b.title_cost_day {
 .img_card {
   margin: 0;
   margin-right: 29px;
-
 }
 
 .list_card {
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
-	
-	margin-bottom: 30px;
+	margin-bottom: 0px;
   padding: 0;
-	padding-bottom: 70px;
-	
 	box-sizing: border-box;
 }
 
 .text_cardhotel {
   width: 260px;
 	margin: 0;
-	
 	box-sizing: border-box;
 }
 
 span.wrapper_price {
-	margin-left: 35px;
+	width: 100px;
 }
 
 .wrapper_rating {
 	width: 112px;
-	
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
-	
 	margin-left: auto;
 }
 
@@ -1168,7 +1092,6 @@ span.wrapper_price {
 	margin: 0;
 	margin-top: auto;
 	text-align: center;
-
   background-color: #f2f2f2;
 }
 
@@ -1181,7 +1104,6 @@ span.wrapper_price {
 .flex_container {
 	width: 260px;
 	margin: 0;
-	
 	text-align: center;
 	box-sizing: border-box;
 }
@@ -1206,13 +1128,11 @@ p.price {
 }
 
 .name_hotel {
-	margin:0;
+	margin: 0;
 	margin-bottom: 2px;
-	
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
-	
   color: #000;
 	text-transform: uppercase;
 }
@@ -1230,9 +1150,8 @@ p.price {
 }
 
 .price {
-	margin:0px;
+	margin: 0px;
 	padding: 0px;
-	
 	vertical-align: middle;
 }
 
@@ -1241,43 +1160,41 @@ p.price {
   margin: 0;
 	padding: 4px 17px;
 	padding-top: 6px;
-
   font-size: 14px;
   line-height: 21px;
   font-weight: 700;
 	text-align: center;
 	color: #fff;
-	
   text-transform: uppercase;
   background-color: #81b3d2;
   border: none;
+	cursor: pointer;
 }
 
 .button_reservation {
 	width: 142px;
   margin: 0;
-	padding-top: 4px;
-
+	padding: 6px 16px 4px 16px;
   font-size: 14px;
   line-height: 21px;
   font-weight: 700;
 	text-align: center;
 	color: #fff;
-	
-  text-transform: uppercase;
+	text-transform: uppercase;
   background-color: #766357;
   border: none;
 	outline: transparent;
+	cursor: pointer;
 }
 
 .calendar {
 	position: absolute;
-	top: 18%;
+	top: 16%;
 	left:92%;
-	
 	border: none;
 	background-color: transparent;
 	outline: transparent;
+	cursor: pointer;
 }
 
 .calendar_color {
@@ -1287,21 +1204,21 @@ p.price {
 .calendar_color:hover
 .calendar_color:focus { 
 	fill: #000;
+	cursor: pointer;
 }
 
 .calendar_color:active {
 	fill: #81b3d2;
+	cursor: pointer;
 }
 
 .fields {
   width: 460px;
-	
   display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
 	position: relative;
-	
 	margin: 0;
 	margin-bottom: 29px;
 }
@@ -1309,8 +1226,8 @@ p.price {
 .main_footer {
   width: 1200px;
 	margin: 0;
+	padding: 0;
   position: relative;
-	
   font-size: 21px;
   box-sizing: border-box;
 }
@@ -1321,34 +1238,42 @@ p.price {
   flex-wrap: nowrap;
   align-items: center;
 	padding: 15px 145px;
-	
 	position: absolute;
   bottom: 0;
-	
 	box-sizing: border-box;
-
-  background-color: rgba(255,255,255,.8);
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
-span.hashtag {
+div.footer_hotels {
+	width: 100%;
+	display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+	padding: 21px 145px;
+	position: relative;
+	box-sizing: border-box;
+}
+
+.hashtag {
   width: 136px;
   margin: 0;
 	margin-left: -12px;
 	display: block;
-	
   font-size: 21px;
   line-height: 26px;
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
 }
 
 .social_icon_list {
   width: 151px;
+	margin-left: 257px;
+	margin-right: auto;
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-
-  margin-left: 257px;
-	margin-right: auto;
-  padding: 0;
   text-align: center;
 	list-style: none;
 }
@@ -1359,13 +1284,12 @@ span.hashtag {
   height: 48px;
 	margin: 0;
 	padding: 0;
-	
   display: flex;
   align-items: center;
   justify-content: center;
-	
 	text-decoration: none;
   background-color: #81b3d2;
+	cursor: pointer;
 }
 
 .social_icon {
@@ -1377,25 +1301,24 @@ span.hashtag {
 .social_icon1:focus,
 .social_icon:focus {
   background-color: #669ec0;
+	cursor: pointer;
 }
 
 .social_icon:active {
-  fill: rgba(0,0,0,.5);
+  fill: rgba(0, 0, 0, 0.5);
   background-color: #5496bd;
-
+	cursor: pointer;
 }
 
 .logo_footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  width: 214px;
+	width: 214px;
   margin: 0;
 	padding: 0;
 	padding-left: 10px;
 	margin-right: -60px;
-
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   text-align: center;
 }
 
@@ -1417,17 +1340,17 @@ span.hashtag {
 	fill:#81b3d2;
 }
 
+.wrapper_footer p {
+	padding-top: 8px;
+}
+
 .logo_footer span {
   margin: 0;
-	
   font-size: 14px;
   font-weight: 400;
+	cursor: pointer;
 }
 
 .social_button a {
   color: #000;
 }
-
-
-
-
